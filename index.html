@@ -133,6 +133,7 @@
             }
           }
         , { parent: '#pane-code', child: 'h2' }
+        , { parent: '#pane-install', child: 'h2' }
         , { parent: '#pane-view-source', child: 'p' }
         ];
 
@@ -172,7 +173,7 @@
     </header>
 
     <div id="pane-intro" class="ui-pane speech hide">
-      <p>Ever wanted to animate text like this? Well now you can with jquery-say!</p>
+      <p>Have you ever wanted to animate text like this? Well now you can with jquery-say!</p>
     </div>
 
     <div id="pane-custom-classes" class="ui-pane speech hide">
@@ -206,6 +207,15 @@
           , onChar:           function( character, $el ){}
           });
         });
+      </code>
+    </div>
+
+    <div id="pane-install" class="ui-pane hide">
+      <h2>Installation:</h2>
+      <code class="language-shell">
+        bower install jquery-say
+        -- Or with jam
+        jam install jquery-say
       </code>
     </div>
 
