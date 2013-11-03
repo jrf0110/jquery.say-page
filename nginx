@@ -2,6 +2,6 @@
   server_name jquery-say.j0.hn;
   listen 80;
 
-  root /apps/jquery-say/public;
+  root /apps/jquery.say-page/public;
   index index.html index.htm;
 }
