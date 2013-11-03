@@ -1,0 +1,7 @@
+ server {
+  server_name jquery-say.j0.hn;
+  listen 80;
+
+  root /apps/jquery-say/public;
+  index index.html index.htm;
+}
