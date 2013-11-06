@@ -20,6 +20,7 @@
 
       code {
         display: block;
+        overflow-x: scroll;
       }
 
       footer {
@@ -192,35 +193,35 @@
     <div id="pane-code" class="ui-pane hide">
       <h2>Le usage:</h2>
       <code class="language-javascript">
-        $(function(){
-          $('p').say({
-            // default: 50;   Time between each character
-            delay:              50 
-            // default: 800;  Time between each element
-          , elementJumpDelay:   800
-            // default: 500;  Time between each sentence
-          , endOfSentenceDelay: 500
-            // default .?!;   Character denoting sentence end
-          , endOfSentenceChar: [ '.', '?', '!' ]
-            // Called when the entire sequence is complete
-          , onComplete:       function(){}
-            // Called when an element is complete
-          , onEndOfElement:   function( $prev, $curr ){}
-            // Called when a sentence is complete
-          , onEndOfSentence:  function( $el ){}
-            // Called for each character processed
-          , onChar:           function( character, $el ){}
-          });
-        });
+$(function(){
+  $('p').say({
+    // default: 50;   Time between each character
+    delay:              50 
+    // default: 800;  Time between each element
+  , elementJumpDelay:   800
+    // default: 500;  Time between each sentence
+  , endOfSentenceDelay: 500
+    // default .?!;   Character denoting sentence end
+  , endOfSentenceChar: [ '.', '?', '!' ]
+    // Called when the entire sequence is complete
+  , onComplete:       function(){}
+    // Called when an element is complete
+  , onEndOfElement:   function( $prev, $curr ){}
+    // Called when a sentence is complete
+  , onEndOfSentence:  function( $el ){}
+    // Called for each character processed
+  , onChar:           function( character, $el ){}
+  });
+});
       </code>
     </div>
 
     <div id="pane-install" class="ui-pane hide">
       <h2>Installation:</h2>
       <code class="language-shell">
-        bower install jquery-say
-        -- Or with jam
-        jam install jquery-say
+bower install jquery-say
+-- Or with jam
+jam install jquery-say
       </code>
     </div>
 
